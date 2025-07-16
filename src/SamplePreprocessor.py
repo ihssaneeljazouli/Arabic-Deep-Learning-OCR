@@ -7,7 +7,8 @@ import cv2
 import Config as config
 
 
-def preprocess(img):
+def preprocess(img, *args, **kwargs):
+
     "scale image into the desired imgSize, transpose it for TF and normalize gray-values"
 
     # increase dataset size by applying random stretches to the images
